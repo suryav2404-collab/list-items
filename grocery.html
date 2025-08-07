@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="grocery.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery List</h1>
+        <div id="list-container">
+            <form id="add-item-form">
+                <input type="text" id="item" placeholder="Item Name" required>
+                <input type="number" id="rate" placeholder="Rate" required>
+                <input type="number" id="quantity" placeholder="Quantity" required> 
+                <button class="add" type="submit">Add Item</button>
+            </form>
+
+            <table id="grocery-list">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Rate</th>
+                        <th>Quantity</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Amount</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Items will be added dynamically here -->
+                </tbody>
+            </table>
+        </div>
+        <div id="total-container">
+            <strong>Total: ₹<span id="total">0</span></strong>
+        </div>
+    </div>
+    <script src="grocery.js"></script>
+</body>
+</html>
